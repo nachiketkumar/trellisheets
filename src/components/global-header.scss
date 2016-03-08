@@ -5,7 +5,7 @@
 // the sign-up/log-in buttons, and optionally, some nav links.
 
 .global-header {
-  background-color: @light-gray-50;
+  background-color: $light-gray-50;
   height: 2em;
   left: 0;
   padding: 1em .75em;
@@ -45,7 +45,7 @@
 
     a.global-header-section-link {
       border-radius: .4em;
-      color: @default-font-color;
+      color: $default-font-color;
       display: inline-block;
       float: left;
       font-size: .8em;
@@ -57,18 +57,18 @@
       vertical-align: top;
 
       &:visited {
-        color: @default-font-color;
+        color: $default-font-color;
       }
 
       &:focus,
       &:hover {
-        color: @default-font-color;
+        color: $default-font-color;
         background-color:  hsla(0, 0%, 0%, 0.1);
         opacity: 1;
       }
 
       &:active {
-        color: @default-font-color;
+        color: $default-font-color;
         background-color: hsla(0, 0%, 0%, 0.2);
         opacity: 1;
       }
@@ -79,10 +79,10 @@
       // What's with the padding and height?
       // the padding and line-height multiplied by the font-size is the height
       // of the global header, or in math: `(.7 + .7 + 1.1) * .8 = 2em`
-      background-color: @light-gray-200;
+      background-color: $light-gray-200;
       border-radius: .4em;
-      box-shadow: 0 2px 0 @light-gray-400;
-      color: @default-font-color;
+      box-shadow: 0 2px 0 $light-gray-400;
+      color: $default-font-color;
       display: inline-block;
       font-size: .8em;
       line-height: 1.1em;
@@ -92,20 +92,20 @@
       vertical-align: top;
 
       &:visited {
-        color: @default-font-color;
+        color: $default-font-color;
       }
 
       &:focus,
       &:hover {
-        color: @default-font-color;
-        background-color: @light-gray-300;
-        box-shadow: 0 2px 0 @light-gray-500;
+        color: $default-font-color;
+        background-color: $light-gray-300;
+        box-shadow: 0 2px 0 $light-gray-500;
       }
 
       &:active {
-        color: @default-font-color;
-        background-color: @light-gray-400;
-        box-shadow: 0 2px 0 @light-gray-600;
+        color: $default-font-color;
+        background-color: $light-gray-400;
+        box-shadow: 0 2px 0 $light-gray-600;
       }
 
     }
@@ -122,11 +122,11 @@
 }
 
 .global-header.mod-trello-blue {
-  background-color: @trello-blue-500;
+  background-color: $trello-blue-500;
 }
 
 .global-header.mod-business-blue {
-  background-color: @business-blue-500;
+  background-color: $business-blue-500;
 }
 
 .global-header-section-logo.mod-black {
@@ -183,8 +183,8 @@
 }
 
 .global-header-section-button.mod-primary {
-  background: linear-gradient(to bottom, @green-500 0%, @green-600 100%);
-  box-shadow: 0 2px 0 @green-900;
+  background: linear-gradient(to bottom, $green-500 0%, $green-600 100%);
+  box-shadow: 0 2px 0 $green-900;
   color: #fff;
   font-weight: bold;
 
@@ -195,14 +195,14 @@
   &:focus,
   &:hover {
     color: #fff;
-    background: linear-gradient(to bottom, @green-600 0%, @green-700 100%);
-    box-shadow: 0 2px 0 @green-900;
+    background: linear-gradient(to bottom, $green-600 0%, $green-700 100%);
+    box-shadow: 0 2px 0 $green-900;
   }
 
   &:active {
     color: #fff;
-    background: linear-gradient(to bottom, @green-700 0%, @green-800 100%);
-    box-shadow: 0 2px 0 @green-900;
+    background: linear-gradient(to bottom, $green-700 0%, $green-800 100%);
+    box-shadow: 0 2px 0 $green-900;
   }
 
 }
@@ -210,18 +210,18 @@
 
 // Media Queries
 
-@media @small {
+// @media ($small) {
 
-  .global-header-section-links {
-    display: none;
-  }
+//   .global-header-section-links {
+//     display: none;
+//   }
 
-  a.global-header-section-button {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
+//   a.global-header-section-button {
+//     padding-left: 1em;
+//     padding-right: 1em;
+//   }
 
-}
+// }
 
 @media print {
 

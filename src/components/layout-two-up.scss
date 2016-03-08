@@ -81,11 +81,11 @@
   // defaults.
 
   .layout-two-up.mod-background-blue-100 {
-    background-color: @trello-blue-100;
+    background-color: $trello-blue-100;
   }
 
   .layout-two-up.mod-background-blue-500 {
-    background-color: @trello-blue-500;
+    background-color: $trello-blue-500;
   }
 
   // Use .mod-white-text on darker, more saturated backgrounds.

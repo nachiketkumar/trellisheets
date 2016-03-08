@@ -1,7 +1,7 @@
 // Global Footer
 
 .global-footer {
-  color: @quiet-font-color;
+  color: $quiet-font-color;
   font-size: .8em;
   margin: 4em 1em;
   text-align: center;
@@ -20,10 +20,10 @@
 
       .global-footer-list-item-link,
       .global-footer-list-item-link:visited {
-        color: @quiet-font-color;
+        color: $quiet-font-color;
 
         &:hover {
-          color: @default-font-color;
+          color: $default-font-color;
         }
 
       }
@@ -35,24 +35,24 @@
 
 // Media Queries
 
-@media @small {
+// @media ($small) {
 
-  .global-footer {
-    font-size: 1em;
-  }
+//   .global-footer {
+//     font-size: 1em;
+//   }
 
-    .global-footer-list-item-link {
-      padding: .3em;
-    }
+//     .global-footer-list-item-link {
+//       padding: .3em;
+//     }
 
-    .global-footer-list-item {
-      display: block;
-      padding: .3em;
-    }
+//     .global-footer-list-item {
+//       display: block;
+//       padding: .3em;
+//     }
 
-}
+// }
 
-@media @print {
+@media print {
 
   .global-footer {
     font-size: 1em;

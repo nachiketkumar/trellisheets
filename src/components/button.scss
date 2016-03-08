@@ -12,11 +12,11 @@
 a.button,
 input[type="submit"],
 button {
-  background: linear-gradient(to bottom, @light-gray-100 0%, @light-gray-200 100%);
+  background: linear-gradient(to bottom, $light-gray-100 0%, $light-gray-200 100%);
   border: 0;
   border-radius: .3em;
-  box-shadow: 0 2px 0 @light-gray-700;
-  color: @default-font-color;
+  box-shadow: 0 2px 0 $light-gray-700;
+  color: $default-font-color;
   cursor: pointer;
   display: inline-block;
   font-size: .9em;
@@ -35,15 +35,15 @@ button {
   input[type="submit"]:hover,
   button:not([disabled]):focus,
   button:not([disabled]):hover {
-    background: linear-gradient(to bottom, @light-gray-200 0%, @light-gray-300 100%);
-    color: @default-font-color;
+    background: linear-gradient(to bottom, $light-gray-200 0%, $light-gray-300 100%);
+    color: $default-font-color;
   }
 
   a.button:active,
   input[type="submit"]:active,
   button:not([disabled]):active {
-    background: linear-gradient(to bottom, @light-gray-300 0%, @light-gray-400 100%);
-    color: @default-font-color;
+    background: linear-gradient(to bottom, $light-gray-300 0%, $light-gray-400 100%);
+    color: $default-font-color;
   }
 
 
@@ -54,9 +54,9 @@ button {
 
 input[type="submit"][disabled],
 button[disabled] {
-  background: @light-gray-100;
+  background: $light-gray-100;
   box-shadow: none;
-  color: @quiet-font-color;
+  color: $quiet-font-color;
   cursor: default;
   font-weight: 300;
 }
@@ -72,8 +72,8 @@ button[disabled] {
   a.button.mod-primary,
   input[type="submit"].mod-primary,
   button.mod-primary {
-    background: linear-gradient(to bottom, @green-500 0%, @green-600 100%);
-    box-shadow: 0 2px 0 @green-900;
+    background: linear-gradient(to bottom, $green-500 0%, $green-600 100%);
+    box-shadow: 0 2px 0 $green-900;
     color: #fff;
     padding-left: 1.8em;
     padding-right: 1.8em;
@@ -85,14 +85,14 @@ button[disabled] {
     input[type="submit"].mod-primary:hover,
     button.mod-primary:not([disabled]):focus,
     button.mod-primary:not([disabled]):hover {
-      background: linear-gradient(to bottom, @green-600 0%, @green-700 100%);
+      background: linear-gradient(to bottom, $green-600 0%, $green-700 100%);
       color: #fff;
     }
 
     a.button.mod-primary:active,
     input[type="submit"].mod-primary:active,
     button.mod-primary:not([disabled]):active {
-      background: linear-gradient(to bottom, @green-700 0%, @green-800 100%);
+      background: linear-gradient(to bottom, $green-700 0%, $green-800 100%);
       color: #fff;
     }
 
@@ -104,7 +104,7 @@ button[disabled] {
   a.button.mod-danger,
   input[type="submit"].mod-danger,
   button.mod-danger {
-    color: @red-500;
+    color: $red-500;
   }
 
     a.button.mod-danger:focus,
@@ -113,16 +113,16 @@ button[disabled] {
     input[type="submit"].mod-danger:not([disabled]):hover,
     button.mod-danger:not([disabled]):focus,
     button.mod-danger:not([disabled]):hover {
-      background: linear-gradient(to bottom, @red-500 0%, @red-600 100%);
-      box-shadow: 0 2px 0 @red-900;
+      background: linear-gradient(to bottom, $red-500 0%, $red-600 100%);
+      box-shadow: 0 2px 0 $red-900;
       color: #fff;
     }
 
     a.button.mod-danger:active,
     input[type="submit"].mod-danger:not([disabled]):active,
     button.mod-danger:not([disabled]):active {
-      background: linear-gradient(to bottom, @red-600 0%, @red-700 100%);
-      box-shadow: 0 2px 0 @red-900;
+      background: linear-gradient(to bottom, $red-600 0%, $red-700 100%);
+      box-shadow: 0 2px 0 $red-900;
       color: #fff;
     }
 
@@ -134,8 +134,8 @@ button[disabled] {
 
   a.button.mod-transparent,
   button.mod-transparent {
-    background: fadeout(@light-gray-500, 70%);
-    box-shadow: 0 1px fadeout(@light-gray-800, 30%);
+    background: fadeout($light-gray-500, 70%);
+    box-shadow: 0 1px fadeout($light-gray-800, 30%);
     color: hsla(0, 0%, 0%, .7);
     font-weight: normal;
   }
@@ -144,15 +144,15 @@ button[disabled] {
     a.button.mod-transparent:hover,
     button.mod-transparent:not([disabled]):focus,
     button.mod-transparent:not([disabled]):hover {
-      background: fadeout(@light-gray-500, 60%);
-      box-shadow: 0 1px fadeout(@light-gray-800, 40%);
+      background: fadeout($light-gray-500, 60%);
+      box-shadow: 0 1px fadeout($light-gray-800, 40%);
       color: hsla(0, 0%, 0%, .9);
     }
 
     a.button.mod-transparent:active,
     button.mod-transparent:not([disabled]):active {
-      background: fadeout(@light-gray-500, 50%);
-      box-shadow: 0 1px fadeout(@light-gray-800, 50%);
+      background: fadeout($light-gray-500, 50%);
+      box-shadow: 0 1px fadeout($light-gray-800, 50%);
       color: hsl(0, 0%, 0%);
     }
 
@@ -173,7 +173,7 @@ button[disabled] {
   a.button.mod-transparent.mod-light-background,
   button.mod-transparent.mod-light-background {
     background: #fff;
-    box-shadow: 0 1px fadeout(@light-gray-800, 70%);
+    box-shadow: 0 1px fadeout($light-gray-800, 70%);
   }
 
     a.button.mod-transparent.mod-light-background:focus,
@@ -181,19 +181,19 @@ button[disabled] {
     button.mod-transparent.mod-light-background:not([disabled]):focus,
     button.mod-transparent.mod-light-background:not([disabled]):hover {
       background: hsla(0, 0%, 100%, .7);
-      box-shadow: 0 1px fadeout(@light-gray-800, 80%);
+      box-shadow: 0 1px fadeout($light-gray-800, 80%);
     }
 
     a.button.mod-transparent.mod-light-background:active,
     button.mod-transparent.mod-light-background:not([disabled]):active {
       background: hsla(0, 0%, 100%, .5);
-      box-shadow: 0 1px fadeout(@light-gray-800, 90%);
+      box-shadow: 0 1px fadeout($light-gray-800, 90%);
     }
 
   // Inline
 
   button.mod-inline {
-    box-shadow: 0 1px 0 @light-gray-500;
+    box-shadow: 0 1px 0 $light-gray-500;
     display: inline;
     font-size: .8em;
     padding: .3em .8em;
@@ -223,8 +223,8 @@ button[disabled] {
   a.button,
   input[type="submit"],
   button {
-    border: 1px solid @default-font-color;
-    color: @default-font-color;
+    border: 1px solid $default-font-color;
+    color: $default-font-color;
   }
 
 }

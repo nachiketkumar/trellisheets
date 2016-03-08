@@ -1,14 +1,14 @@
 gulp = require 'gulp'
 path = require 'path'
 gutil = require 'gulp-util'
-less = require 'gulp-less'
+sass = require 'gulp-sass'
 minifyCSS = require 'gulp-minify-css'
 rename = require 'gulp-rename'
-LessPluginAutoPrefix = require 'less-plugin-autoprefix'
+AutoPrefix = require 'gulp-autoprefixer'
 
 stylesSrc = './src/entries/*'
 
-autoprefix = new LessPluginAutoPrefix
+autoprefix = new AutoPrefix
   browsers: [
     'chrome >= 35'
     'ie >= 10'
@@ -21,7 +21,7 @@ gulp.task 'styles', ->
 
   gulp
     .src stylesSrc
-    .pipe less
+    .pipe sass
       paths: [path.join(__dirname, './src')]
       plugins: [autoprefix]
     .on 'error', (err) ->

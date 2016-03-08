@@ -5,7 +5,7 @@ button, html, input, select, textarea {
 }
 
 body {
-  color: @default-font-color;
+  color: $default-font-color;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
@@ -46,7 +46,7 @@ b, strong, h1, h2, h3, h4, h5, h6 {
 // Block Quotes
 
 blockquote {
-  border-left: 2px solid @light-gray-300;
+  border-left: 2px solid $light-gray-300;
   padding-left: 1em;
   margin: 1em 0;
 }
@@ -55,8 +55,8 @@ blockquote {
 // Pre / Code
 
 pre {
-  background-color: @light-gray-50;
-  border: 1px solid @light-gray-200;
+  background-color: $light-gray-50;
+  border: 1px solid $light-gray-200;
   border-radius: .4em;
   font-size: .8em;
   overflow: auto;
@@ -66,10 +66,10 @@ pre {
 }
 
 code {
-  background-color: @light-gray-50;
-  border: 1px solid @light-gray-200;
+  background-color: $light-gray-50;
+  border: 1px solid $light-gray-200;
   border-radius: .2em;
-  color: @red-400;
+  color: $red-400;
   font-family: "fira-mono", monospace;
   padding: 0 .3em;
   margin: 0 .1em;
@@ -80,7 +80,7 @@ code {
     background-color: none;
     border: none;
     border-radius: 0;
-    color: @default-font-color;
+    color: $default-font-color;
     margin: 0;
     padding: 0;
   }
@@ -89,16 +89,16 @@ code {
 // Links
 
 a {
-  color: @trello-blue-400;
+  color: $trello-blue-400;
 }
 
   a:hover,
   a:visited:hover {
-    color: @trello-blue-900;
+    color: $trello-blue-900;
   }
 
   a:visited {
-    color: @trello-blue-500;
+    color: $trello-blue-500;
   }
 
 
@@ -108,7 +108,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid @light-gray-300;
+  border-top: 1px solid $light-gray-300;
   margin: 2em 0;
   padding: 0;
 }
@@ -117,17 +117,17 @@ hr {
 // Selection
 
 ::selection {
-  background: @trello-blue-100;
+  background: $trello-blue-100;
   text-shadow: none;
 }
 
 
 // Smaller Screens
 
-@media @small {
+// @media $small {
 
-  body {
-    font-size: 16px;
-  }
+//   body {
+//     font-size: 16px;
+//   }
 
-}
+// }
