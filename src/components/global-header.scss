@@ -210,20 +210,20 @@
 
 // Media Queries
 
-// @media ($small) {
+@include mq-small {
 
-//   .global-header-section-links {
-//     display: none;
-//   }
+  .global-header-section-links {
+    display: none;
+  }
 
-//   a.global-header-section-button {
-//     padding-left: 1em;
-//     padding-right: 1em;
-//   }
+  a.global-header-section-button {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
-// }
+}
 
-@media print {
+@include print {
 
   // Don't worry about printing the header.
 

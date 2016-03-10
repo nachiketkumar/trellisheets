@@ -1,13 +1,43 @@
 // Media Queries
 
-$highdensity: "only screen and (-webkit-min-device-pixel-ratio: 1.5)",
-              "only screen and (min--moz-device-pixel-ratio: 1.5)",
-              "only screen and (-o-min-device-pixel-ratio: 3/2)",
-              "only screen and (min-device-pixel-ratio: 1.5)";
+@mixin mq-small {
+	@media only screen and (max-width: 750px) {
+		@content;
+	}
+}
 
-$small:       "only screen and (max-width: 750px)";
-$medium:      "only screen and (min-width: 751px) and (max-width: 900px)";
-$large:       "only screen and (min-width: 901px) and (max-width: 1280px)";
-$extra-large: "only screen and (min-width: 1281px)";
+@mixin mq-medium {
+	@media only screen and (min-width: 751px) and (max-width: 900px) {
+		@content;
+	}
+}
 
-$print:       "print";
+@mixin mq-large {
+	@media only screen and (min-width: 901px) and (max-width: 1280px) {
+		@content;
+	}
+}
+
+@mixin mq-xlarge {
+	@media only screen and (min-width: 1281px) {
+		@content;
+	}
+}
+
+@mixin print {
+	@media print {
+		@content;
+	}
+}
+
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}

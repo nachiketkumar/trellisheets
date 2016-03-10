@@ -117,34 +117,34 @@
 
 // Media Queries
 
-// @media ($small) {
+@include mq-small {
 
-//   .page-header-nav-list.mod-fixed-width {
-//     justify-content: center;
+  .page-header-nav-list.mod-fixed-width {
+    justify-content: center;
 
-//     .page-header-nav-list-item.mod-input {
-//       flex: none;
-//       text-align: center;
-//     }
+    .page-header-nav-list-item.mod-input {
+      flex: none;
+      text-align: center;
+    }
 
-//   }
+  }
 
-//   .page-header-nav-list {
-//     display: block;
-//   }
+  .page-header-nav-list {
+    display: block;
+  }
 
-//   .page-header-nav-list-item {
-//     display: block;
-//     padding: .7em 1em;
-//   }
+  .page-header-nav-list-item {
+    display: block;
+    padding: .7em 1em;
+  }
 
-//   .page-header-nav-list-item.mod-input {
-//     margin: 0 auto;
-//   }
+  .page-header-nav-list-item.mod-input {
+    margin: 0 auto;
+  }
 
-// }
+}
 
-@media print {
+@include print {
 
   .page-header-nav-list {
     display: block;

@@ -35,24 +35,24 @@
 
 // Media Queries
 
-// @media ($small) {
+@include mq-small {
 
-//   .global-footer {
-//     font-size: 1em;
-//   }
+  .global-footer {
+    font-size: 1em;
+  }
 
-//     .global-footer-list-item-link {
-//       padding: .3em;
-//     }
+    .global-footer-list-item-link {
+      padding: .3em;
+    }
 
-//     .global-footer-list-item {
-//       display: block;
-//       padding: .3em;
-//     }
+    .global-footer-list-item {
+      display: block;
+      padding: .3em;
+    }
 
-// }
+}
 
-@media print {
+@include print {
 
   .global-footer {
     font-size: 1em;

@@ -124,10 +124,10 @@ hr {
 
 // Smaller Screens
 
-// @media $small {
+@include mq-small {
 
-//   body {
-//     font-size: 16px;
-//   }
+  body {
+    font-size: 16px;
+  }
 
-// }
+}
